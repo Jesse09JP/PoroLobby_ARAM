@@ -9,7 +9,7 @@ class Lobby:
         self.cm = ConnectionManager()
         self.defaultBotDifficulty = self.config.get("defaultBotDifficulty", "MEDIUM")
 
-    def createLobby(self, gameMode="PRACTICETOOL", spectatorPolicy="AllAllowed", teamSize=5, lobbyName="League of Poro's Practice Tool", lobbyPassword=""):
+    def createLobby(self, gameMode="CLASSIC", spectatorPolicy="AllAllowed", teamSize=5, lobbyName="League of Poro's Practice Tool", lobbyPassword=""):
         if self.cm.isConnected():
             data = {
                 "customGameLobby": {
@@ -17,7 +17,7 @@ class Lobby:
                         "gameMode": gameMode,
                         "gameMutator": "",
                         "gameServerRegion": "",
-                        "mapId": 12,
+                        "mapId": 11,
                         "mutators": {
                             "id": 1
                         },
