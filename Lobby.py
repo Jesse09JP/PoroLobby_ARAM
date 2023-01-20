@@ -17,7 +17,7 @@ class Lobby:
                         "gameMode": gameMode,
                         "gameMutator": "",
                         "gameServerRegion": "",
-                        "mapId": 11,
+                        "mapId": 12,
                         "mutators": {
                             "id": 1
                         },
